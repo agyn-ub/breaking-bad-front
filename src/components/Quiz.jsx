@@ -15,7 +15,7 @@ const Quiz = ({ account, refreshFlag }) => {
 
     const fetchQuestions = async () => {
         try {
-            const response = await fetch('http://localhost:8000/questions/Breaking%20Bad');
+            const response = await fetch('https://breaking-bad-fastapi.onrender.com/questions/Breaking%20Bad');
             const data = await response.json();
             setQuestions(data);
             setLoading(false);
